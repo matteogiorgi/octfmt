@@ -14,7 +14,7 @@ type Options struct {
 }
 
 // DefaultOptions is the formatter's default style.
-var DefaultOptions = Options{IndentWidth: 2, MaxBlankLines: 1}
+var DefaultOptions = Options{IndentWidth: 4, MaxBlankLines: 1}
 
 type Printer struct {
 	opts Options

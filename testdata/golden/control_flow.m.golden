@@ -1,30 +1,30 @@
 if x > 0
-  disp('pos')
+    disp('pos')
 elseif x < 0
-  disp('neg')
+    disp('neg')
 else
-  disp('zero')
+    disp('zero')
 end
 
 while x < 10
-  x = x + 1;
+    x = x + 1;
 end
 
 do
-  x = x - 1;
+    x = x - 1;
 until x <= 0
 
 switch day
-  case 1
-    name = 'Mon';
-  case {6, 7}
-    name = 'Weekend';
-  otherwise
-    name = 'Weekday';
+    case 1
+        name = 'Mon';
+    case {6, 7}
+        name = 'Weekend';
+    otherwise
+        name = 'Weekday';
 end
 
 try
-  risky();
+    risky();
 catch err
-  warning(err.message);
+    warning(err.message);
 end
