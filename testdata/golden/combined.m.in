@@ -20,3 +20,8 @@ end
 for i=1:10
 s=s+i;
 end
+
+
+
+[m,n]=size(a);
+[~,idx]=max(a);

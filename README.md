@@ -26,7 +26,7 @@ Flags:
 - `-w` write result to the source file instead of stdout
 - `-l` list files that differ from octfmt's formatting
 - `-d` show a diff instead of rewriting
-- `-indent N` indent width in spaces (default 2)
+- `-indent N` indent width in spaces (default 4)
 - `-max-blank-lines N` max consecutive blank lines kept between statements (default 1)
 
 Exit code is non-zero if any input file fails to parse; the offending
@@ -98,4 +98,8 @@ go test ./...
 Includes lexer unit tests (transpose/string disambiguation, number
 formats, comments), parser tests (matrix element-splitting ambiguity,
 command-syntax detection, malformed-input error recovery), golden-file
-formatting tests with idempotency checks, and CLI integration tests.
+formatting tests (exact expected output, plus an automatic idempotency
+check that reformatting the output is a no-op) covering both everyday
+constructs and edge cases (anonymous functions, dynamic fields, `do/until`,
+`parfor` with a worker count, `global`/`persistent` with initializers,
+`unwind_protect`), and CLI integration tests.
