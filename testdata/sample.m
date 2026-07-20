@@ -1,0 +1,22 @@
+function   y=square( x )
+% squares x
+y=x^2;
+endfunction
+
+
+
+a=[1 -1 2,3;4 5 6]';
+
+
+b={1,'two',"three"};
+if a>0&&b<1
+disp('positive')
+elseif a==0
+disp 'zero'
+else
+disp('negative')
+end
+
+for i=1:10
+s=s+i;
+end

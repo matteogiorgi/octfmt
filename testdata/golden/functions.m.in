@@ -1,0 +1,18 @@
+function y=square(x)
+y=x^2;
+endfunction
+
+function [a,b]=swap(x,y)
+a=y;
+b=x;
+end
+
+function result=apply(f,x)
+result=f(x);
+end
+
+sq=@(x) x^2;
+h=@sin;
+vals=apply(@(x) x+1, 5);
+[m,n]=size(A);
+[~,idx]=max(A);

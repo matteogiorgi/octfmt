@@ -1,0 +1,11 @@
+% top-level comment
+x=1; % trailing comment
+# hash comment
+y=2;   #    messy spacing
+%{
+block comment
+spanning lines
+%}
+z=3;
+%% section marker
+w=4;
