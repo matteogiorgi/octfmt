@@ -1,4 +1,4 @@
-# octfmt
+# Octave formatter
 
 A source-code formatter for GNU Octave (`.m` files), written in Go. It
 parses Octave into an AST and re-prints it with consistent indentation,
