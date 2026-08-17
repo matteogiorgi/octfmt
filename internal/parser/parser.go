@@ -5,8 +5,8 @@ package parser
 import (
 	"fmt"
 
-	"github.com/matteo/octave-formatter/internal/ast"
-	"github.com/matteo/octave-formatter/internal/lexer"
+	"github.com/matteo/octfmt/internal/ast"
+	"github.com/matteo/octfmt/internal/lexer"
 )
 
 type Parser struct {

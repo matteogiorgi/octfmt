@@ -1,8 +1,8 @@
 package parser
 
 import (
-	"github.com/matteo/octave-formatter/internal/ast"
-	"github.com/matteo/octave-formatter/internal/lexer"
+	"github.com/matteo/octfmt/internal/ast"
+	"github.com/matteo/octfmt/internal/lexer"
 )
 
 // Operator precedence, low to high, per Octave's documented table:

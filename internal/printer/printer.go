@@ -4,7 +4,7 @@ package printer
 import (
 	"strings"
 
-	"github.com/matteo/octave-formatter/internal/ast"
+	"github.com/matteo/octfmt/internal/ast"
 )
 
 // Options controls formatting style.

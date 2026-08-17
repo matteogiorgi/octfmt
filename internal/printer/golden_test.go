@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/matteo/octave-formatter/internal/parser"
+	"github.com/matteo/octfmt/internal/parser"
 )
 
 var update = flag.Bool("update", false, "update golden files")

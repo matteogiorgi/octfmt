@@ -1,7 +1,7 @@
 package printer
 
 import (
-	"github.com/matteo/octave-formatter/internal/ast"
+	"github.com/matteo/octfmt/internal/ast"
 )
 
 func (p *Printer) printStmt(s ast.Stmt) {

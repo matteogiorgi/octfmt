@@ -2,7 +2,7 @@
 // by the parser and consumed by the printer.
 package ast
 
-import "github.com/matteo/octave-formatter/internal/lexer"
+import "github.com/matteo/octfmt/internal/lexer"
 
 // Comment is a single line or block comment.
 type Comment struct {

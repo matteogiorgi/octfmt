@@ -9,9 +9,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/matteo/octave-formatter/internal/diff"
-	"github.com/matteo/octave-formatter/internal/parser"
-	"github.com/matteo/octave-formatter/internal/printer"
+	"github.com/matteo/octfmt/internal/diff"
+	"github.com/matteo/octfmt/internal/parser"
+	"github.com/matteo/octfmt/internal/printer"
 )
 
 var (

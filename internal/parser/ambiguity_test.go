@@ -1,7 +1,7 @@
 package parser
 
 import (
-	"github.com/matteo/octave-formatter/internal/ast"
+	"github.com/matteo/octfmt/internal/ast"
 	"testing"
 )
 

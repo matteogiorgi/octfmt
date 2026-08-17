@@ -78,16 +78,15 @@ so quote style is always preserved).
 
 ## Project layout
 
-```
-internal/lexer    tokenizer (handles Octave's ' transpose-vs-string
-                   ambiguity and matrix-row whitespace significance)
-internal/ast      AST node definitions
-internal/parser   recursive-descent parser -> ast.File
-internal/printer  ast.File -> formatted source
-internal/diff     minimal unified-diff generator, used by -d
-cmd/octfmt        CLI
-testdata/golden   golden-file fixtures (regenerate with `go test ./internal/printer/... -run TestGolden -update`)
-```
+| Path | Description |
+| --- | --- |
+| `internal/lexer` | Tokenizer — handles Octave's `'` transpose-vs-string ambiguity and matrix-row whitespace significance |
+| `internal/ast` | AST node definitions |
+| `internal/parser` | Recursive-descent parser, `source -> ast.File` |
+| `internal/printer` | `ast.File -> formatted source` |
+| `internal/diff` | Minimal unified-diff generator, used by `-d` |
+| `cmd/octfmt` | CLI |
+| `testdata/golden` | Golden-file fixtures (regenerate with `go test ./internal/printer/... -run TestGolden -update`) |
 
 ## Tests
 

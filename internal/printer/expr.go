@@ -3,8 +3,8 @@ package printer
 import (
 	"strings"
 
-	"github.com/matteo/octave-formatter/internal/ast"
-	"github.com/matteo/octave-formatter/internal/lexer"
+	"github.com/matteo/octfmt/internal/ast"
+	"github.com/matteo/octfmt/internal/lexer"
 )
 
 // paddedOpText maps binary operator tokens that are printed with a
