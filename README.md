@@ -5,11 +5,17 @@ parses Octave into an AST and re-prints it with consistent indentation,
 operator spacing, blank-line normalization, and comment formatting —
 similar in spirit to `gofmt`.
 
+
+
+
 ## Install / build
 
 ```sh
 go build -o octfmt ./cmd/octfmt
 ```
+
+
+
 
 ## Usage
 
@@ -31,6 +37,9 @@ Flags:
 
 Exit code is non-zero if any input file fails to parse; the offending
 file(s) are left untouched and the error is printed to stderr.
+
+
+
 
 ## What it formats
 
@@ -65,6 +74,9 @@ prettifying), reorder code, or change string quote style (`'`/`"` are
 semantically different in Octave — double-quoted strings support escapes —
 so quote style is always preserved).
 
+
+
+
 ## Known limitations
 
 - Octave's "command syntax" (e.g. `hold on`, `format long g`, `pkg load io`)
@@ -75,6 +87,9 @@ so quote style is always preserved).
   arithmetic expressions rather than command arguments.
 - `classdef`-based object definitions are not supported.
 - No line-width-based reflowing of long expressions/argument lists.
+
+
+
 
 ## Project layout
 
@@ -87,6 +102,9 @@ so quote style is always preserved).
 | `internal/diff` | Minimal unified-diff generator, used by `-d` |
 | `cmd/octfmt` | CLI |
 | `testdata/golden` | Golden-file fixtures (regenerate with `go test ./internal/printer/... -run TestGolden -update`) |
+
+
+
 
 ## Tests
 
